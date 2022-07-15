@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* этот контейнер */
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+} 
+
+.main-menu .main-menu__title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.main-menu .main-menu__wrapper {
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 200px;
+    display: grid; 
+    grid-column: repeat(8, 1fr);
+    grid-row: repeat(8, 1fr);
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-3 photo-3"
+    "photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-3 photo-3"
+    "photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-6 photo-6"
+    "photo-1 photo-1 photo-2 photo-2 photo-2 photo-2 photo-6 photo-6"
+    "photo-4 photo-4 photo-4 photo-4 photo-5 photo-5 photo-6 photo-6"
+    "photo-4 photo-4 photo-4 photo-4 photo-5 photo-5 photo-9 photo-9"
+    "photo-7 photo-7 photo-8 photo-8 photo-5 photo-5 photo-9 photo-9"
+    "photo-7 photo-7 photo-8 photo-8 photo-5 photo-5 photo-9 photo-9"; 
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-1 {
+    grid-area: photo-1;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-2 {
+    grid-area: photo-2;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-3 {
+    grid-area: photo-3;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-4 {
+    grid-area: photo-4;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-5 {
+    grid-area: photo-5;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-6 {
+    grid-area: photo-6;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-7 {
+    grid-area: photo-7;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-8 {
+    grid-area: photo-8;
+}
+
+.main-menu .container .main-menu__wrapper .main-menu__item-9 {
+    grid-area: photo-9;
+}
+
